@@ -1,93 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <script src="./js/scripts.js"></script>
+  <body>
     <header id="top-bar">
-        <section id="section-top-bar-logo">
-            <img src="" alt="">
-        </section>
-        <section>
-            <a href=""></a>
-            <a href=""></a>
-            <a href=""></a>
-        </section>
+      <div id="">
+        <h1>MoCH</h1>
+        <!-- <img src="" alt=""> -->
+      </div>
+        <li>
+        <ul><a href="">Início</a></ul>
+        <ul><a href="">Sobre Nós</a></ul>
+        <ul><a href="">Dashboard</a></ul>
+    </li>
+      </section>
     </header>
     <main>
-        <section>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h2></h2>
-                <p></p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h2></h2>
-                <p></p>
-            </div>
-        </section>
-        <section>
-            <div>
-                <img src="" alt="">
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-            </div>
-            <div>
-                <img src="" alt="">
-                <p></p>
-            </div>
-        </section>
-        <section>
-            <h2>Perguntas frequentes</h2>
-            <div>
-                <div>
-                    <h3></h3>
-                </div>
-                <p></p>
-            </div>
-            <div>
-                <div>
-                    <h3></h3>
-                </div>
-                <p></p>
-            </div>
-            <div>
-                <div>
-                    <h3></h3>
-                </div>
-                <p></p>
-            </div>
-        </section>
-        <section>
-            <h2>Orçamento</h2>
-            <form action="">
-                <input type="text" name="" id="">
-                <input type="text" name="" id="">
-                <input type="email" name="" id="">
-                <input type="submit" value="">
-            </form>
-        </section>
+      <section id="section-localization-map" class="columns-box">
+        <div>
+          <img src="./assets/images/CE_2303204_HIDROGRAFIA.jpg" alt="" />
+          <figcaption>
+            Mapa de Rural Sustentável - Caatinga. Link:
+            https://geo.fbds.org.br/CE/CARIRIACU/MAPAS/CE_2303204_HIDROGRAFIA.jpg
+          </figcaption>
+        </div>
+        <div>
+          <h2>Monitoramento Local</h2>
+          <p>
+            Nosso dispositivo foi projetado para monitorar o nível dos rios e
+            riachos em tempo real na região de Caririaçu, CE. Utilizando
+            sensores de distância e comunicação via rede 2G, conseguimos
+            acompanhar alterações nos corpos hídricos com precisão e baixo
+            custo.
+          </p>
+        </div>
+      </section>
+      <section class="columns-box">
+        <div>
+          <h2>Como Funciona</h2>
+          <p>
+            O MoCH é composto por um microcontrolador Arduino, um sensor
+            ultrassônico para medir a distância da superfície da água e um
+            módulo de chip 2G que envia os dados para nossa central de
+            monitoramento. A instalação é simples, e o funcionamento é
+            totalmente autônomo com alimentação solar.
+          </p>
+        </div>
+        <div>
+          <img src="" alt="" />
+        </div>
+      </section>
+      <section class="columns-box">
+        <div>
+          <img src="" alt="" />
+          <p>
+            <strong>Baixo Custo:</strong> Equipamentos acessíveis e manutenção
+            mínima, ideal para municípios pequenos.
+          </p>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <p>
+            <strong>Dados em Tempo Real:</strong> Atualizações frequentes
+            permitem rápida resposta a enchentes ou secas.
+          </p>
+        </div>
+        <div>
+          <img src="" alt="" />
+          <p>
+            <strong>Escalável:</strong> Fácil adaptação para outros corpos
+            hídricos como açudes, barragens e reservatórios urbanos.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Perguntas frequentes</h2>
+        <div>
+          <div>
+            <h3>Esse sistema precisa de internet Wi-Fi?</h3>
+          </div>
+          <p>
+            Não. Utilizamos chip 2G, que funciona onde há sinal de celular
+            básico, sem precisar de Wi-Fi.
+          </p>
+        </div>
+        <div>
+          <div>
+            <h3>Qual a precisão da medição?</h3>
+          </div>
+          <p>
+            O sensor possui margem de erro de apenas alguns milímetros, o que
+            garante um acompanhamento confiável do nível da água.
+          </p>
+        </div>
+        <div>
+          <div>
+            <h3>O equipamento funciona durante a noite ou em dias nublados?</h3>
+          </div>
+          <p>
+            Sim. A alimentação é feita por painel solar com bateria
+            recarregável, garantindo autonomia mesmo sem luz solar direta.
+          </p>
+        </div>
+      </section>
+      <section>
+        <h2>Orçamento</h2>
+        <form action="">
+          <input type="text" name="nome" id="nome" placeholder="Seu nome" />
+          <input type="text" name="cidade" id="cidade" placeholder="Cidade" />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Seu e-mail"
+          />
+          <input type="submit" value="Solicitar Orçamento" />
+        </form>
+      </section>
     </main>
-    <footer>
-        <section class="section-footer-collumn"></section>
-        <section class="section-footer-collumn"></section>
-        <section class="section-footer-collumn"></section>
+    <footer class="columns-box">
+      <section class="section-footer-column">
+        <h4>Contato</h4>
+        <p>Email: contato@mochstartup.com</p>
+        <p>WhatsApp: (88) 99999-9999</p>
+      </section>
+      <section class="section-footer-column">
+        <h4>Links Úteis</h4>
+        <p><a href="#">Início</a></p>
+        <p><a href="#">Dashboard</a></p>
+      </section>
+      <section class="section-footer-column">
+        <h4>Sobre o Projeto</h4>
+        <p>
+          Projeto acadêmico de monitoramento de recursos hídricos com tecnologia
+          acessível e impacto local.
+        </p>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>

@@ -1,0 +1,43 @@
+*,
+header > * {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+body > * {
+  width: 100%;
+}
+
+#top-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+#section-localization-map {
+  display: flex;
+  flex-direction: row;
+}
+
+.columns-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.columns-box > div,
+.columns-box > section {
+  width: 100%;
+}
+
+#section-localization-map > div > img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 32px;
+}

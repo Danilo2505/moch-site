@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald"),
+    url("../assets/fonts/Oswald/Oswald-VariableFont_wght.ttf")
+      format("opentype-variations");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local("Open Sans"),
+    url("../assets/fonts/OpenSans/OpenSans-VariableFont_wdth\,wght.ttf")
+      format("opentype-variations");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans Italic";
+  src: local("Open Sans Italic"),
+    url("../assets/fonts/OpenSans/OpenSans-Italic-VariableFont_wdth\,wght.ttf")
+      format("opentype-variations");
+  font-weight: 100 900;
+  font-stretch: 75% 125%;
+  font-style: italic;
+}
