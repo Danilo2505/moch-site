@@ -1,3 +1,4 @@
 function expandHideTopBar(element) {
-  console.log(element.parent.id);
+  console.log(element.parent);
+  console.log(typeof(element.parent));
 }
