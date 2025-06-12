@@ -1,0 +1,4 @@
+# References
+
+## Breakpoints References
+https://www.browserstack.com/guide/responsive-design-breakpoints

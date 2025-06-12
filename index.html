@@ -8,19 +8,30 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
+  <script src="./js/helpers.js"></script>
   <script src="./js/scripts.js"></script>
   <body>
     <header id="top-bar">
-      <div id="">
+      <div id="div-top-bar-logo">
         <h1>MoCH</h1>
         <!-- <img src="" alt=""> -->
       </div>
-        <li>
-        <ul><a href="">Início</a></ul>
-        <ul><a href="">Sobre Nós</a></ul>
-        <ul><a href="">Dashboard</a></ul>
-    </li>
-      </section>
+      <button id="button-top-bar-expand-hide" onclick="expandHideTopBar(self);">
+        <img src="./assets/icons/list.svg" alt="" onload="fetchSvg(this)" />
+      </button>
+      <div id="div-top-bar-links">
+        <li id="li-top-bar-links">
+          <ul>
+            <a href="">Início</a>
+          </ul>
+          <ul>
+            <a href="">Sobre Nós</a>
+          </ul>
+          <ul>
+            <a href="">Dashboard</a>
+          </ul>
+        </li>
+      </div>
     </header>
     <main>
       <section id="section-localization-map" class="columns-box">

@@ -1,0 +1,47 @@
+/* Cabeçalho principal (nome da marca, título da página) */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+/* Subtítulos principais de seção (ex: "Como Funciona") */
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+/* Títulos de subseções ou perguntas frequentes */
+h3 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Texto normal dos parágrafos */
+p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Texto auxiliar ou menor (ex: figcaption, labels pequenos) */
+span,
+figcaption,
+small {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Botões */
+button,
+input[type="submit"] {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Links no menu */
+a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
