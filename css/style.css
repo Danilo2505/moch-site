@@ -43,14 +43,20 @@ figcaption {
   word-break: break-word;
 }
 
-#button-switch-theme {
-  background-color: var(--accent-color);
-  color: white;
+#btn-dark-mode-toggle {
+  background-color: transparent;
+  color: var(--accent-color);
   border: none;
-  padding: 0.5em 1em;
+  padding: 0px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 100vh;
   cursor: pointer;
+}
+
+#btn-dark-mode-toggle,
+#btn-dark-mode-toggle svg {
+  width: 1.8em;
+  height: 1.8em;
 }
 
 .columns-box {
@@ -177,13 +183,38 @@ body.dark-mode #form-quote input[type="email"] {
   .columns-box {
     display: flex;
     flex-direction: row;
+    gap: 2em;
+    padding: 0px 1em;
   }
 }
+/* Wide & Ultra-Wide Monitors */
+@media only screen and (min-width: 1400px) {
+  body {
+    align-items: center;
+  }
 
-/* Tablets */
-@media only screen and (min-width: 481px; max-width: 768px) {
-}
+  body > * {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* Desktop */
-@media only screen and (min-width: 769px) {
+  .columns-box {
+    gap: 3em;
+    padding: 0 2em;
+  }
+
+  #section-quote h2 {
+    font-size: 2.5em;
+  }
+
+  #form-quote {
+    max-width: 600px;
+  }
+
+  #section-faq {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

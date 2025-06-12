@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <script src="./js/helpers.js"></script>
-  <script src="./js/scripts.js"></script>
   <body>
     <header id="top-bar">
       <div id="div-top-bar-logo">
@@ -21,18 +20,18 @@
       <div id="div-top-bar-links">
         <li id="li-top-bar-links">
           <ul>
-            <a href="">Início</a>
+            <a href="#">Início</a>
           </ul>
           <ul>
-            <a href="">Sobre Nós</a>
+            <a href="#">Sobre Nós</a>
           </ul>
           <ul>
-            <a href="">Dashboard</a>
+            <a href="#">Dashboard</a>
           </ul>
         </li>
       </div>
 
-      <button id="button-switch-theme" onclick="toggleTheme()">🌗</button>
+      <button id="btn-dark-mode-toggle"></button>
     </header>
 
     <main>
@@ -65,15 +64,16 @@
             </p>
           </div>
           <div>
-            <img
-              src="./assets/images/_vxnujyHFLRUoYucQKIQQsnVy0e8Vs0qMAxQd_6K23M.webp"
-              alt=""
-            />
+            <img src="./assets/images/arduino.png" alt="" />
           </div>
         </div>
         <div class="columns-box">
           <div>
-            <img src="" alt="" />
+            <img
+              class="invert-on-dark"
+              src="./assets/images/low-cost.png"
+              alt=""
+            />
             <h3><strong>Baixo Custo</strong></h3>
             <p>
               Equipamentos acessíveis e manutenção mínima, ideal para municípios
@@ -81,7 +81,11 @@
             </p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img
+              class="invert-on-dark"
+              src="./assets/images/real-time.png"
+              alt=""
+            />
             <h3><strong>Dados em Tempo Real</strong></h3>
             <p>
               Atualizações frequentes permitem rápida resposta a enchentes ou
@@ -89,12 +93,13 @@
             </p>
           </div>
           <div>
-            <img src="" alt="" />
+            <img
+              class="invert-on-dark"
+              src="./assets/images/scalability.png"
+              alt=""
+            />
             <h3><strong>Escalável</strong></h3>
-            <p>
-              Fácil adaptação para outros corpos hídricos como açudes, barragens
-              e reservatórios urbanos.
-            </p>
+            <p>Fácil adaptação para outros corpos hídricos como açudes.</p>
           </div>
         </div>
       </section>
@@ -169,10 +174,11 @@
       <section class="section-footer-column">
         <h4>Sobre o Projeto</h4>
         <p>
-          Projeto acadêmico de monitoramento de recursos hídricos com tecnologia
+          Projeto escolar de monitoramento de recursos hídricos com tecnologia
           acessível e impacto local.
         </p>
       </section>
     </footer>
   </body>
+  <script src="./js/scripts.js"></script>
 </html>

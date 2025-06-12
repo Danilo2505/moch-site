@@ -9,13 +9,16 @@
 }
 
 /* === Paleta Dark === */
-body.dark-mode {
+[data-theme="dark"] {
   --bg-color: #121212;
   --text-color: #e0e0e0;
   --heading-color: #ffffff;
   --accent-color: #bb86fc;
   --smooth-color: #280e46;
   --link-color: #82b1ff;
+  .invert-on-dark {
+    filter: invert(1);
+  }
 }
 
 /* === Aplicações globais === */
