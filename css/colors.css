@@ -1,0 +1,59 @@
+/* === Paleta Light === */
+:root {
+  --bg-color: #f9f9f7;
+  --text-color: #1c1c1c;
+  --heading-color: #0d0d0d;
+  --accent-color: #3a86ff;
+  --smooth-color: #ffa4a4;
+  --link-color: #0077cc;
+}
+
+/* === Paleta Dark === */
+body.dark-mode {
+  --bg-color: #121212;
+  --text-color: #e0e0e0;
+  --heading-color: #ffffff;
+  --accent-color: #bb86fc;
+  --smooth-color: #280e46;
+  --link-color: #82b1ff;
+}
+
+/* === Aplicações globais === */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Segoe UI", sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--heading-color);
+}
+
+hr {
+  border: 1px solid var(--text-color);
+  opacity: 30%;
+}
+
+p,
+span,
+figcaption {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--link-color);
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+#section-faq {
+  background-color: var(--smooth-color);
+}

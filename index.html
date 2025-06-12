@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" href="./css/general-text-setup.css" />
+    <link rel="stylesheet" href="./css/colors.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <script src="./js/helpers.js"></script>
@@ -17,9 +18,6 @@
         <h1>MoCH</h1>
         <!-- <img src="" alt=""> -->
       </div>
-      <button id="button-top-bar-expand-hide" onclick="expandHideTopBar(self);">
-        <img src="./assets/icons/list.svg" alt="" onload="fetchSvg(this)" />
-      </button>
       <div id="div-top-bar-links">
         <li id="li-top-bar-links">
           <ul>
@@ -33,15 +31,14 @@
           </ul>
         </li>
       </div>
+
+      <button id="button-switch-theme" onclick="toggleTheme()">🌗</button>
     </header>
+
     <main>
       <section id="section-localization-map" class="columns-box">
         <div>
-          <img src="./assets/images/CE_2303204_HIDROGRAFIA.jpg" alt="" />
-          <figcaption>
-            Mapa de Rural Sustentável - Caatinga. Link:
-            https://geo.fbds.org.br/CE/CARIRIACU/MAPAS/CE_2303204_HIDROGRAFIA.jpg
-          </figcaption>
+          <img src="./assets/images/basic-monitoring-strategies.jpg" alt="" />
         </div>
         <div>
           <h2>Monitoramento Local</h2>
@@ -54,77 +51,97 @@
           </p>
         </div>
       </section>
-      <section class="columns-box">
-        <div>
-          <h2>Como Funciona</h2>
-          <p>
-            O MoCH é composto por um microcontrolador Arduino, um sensor
-            ultrassônico para medir a distância da superfície da água e um
-            módulo de chip 2G que envia os dados para nossa central de
-            monitoramento. A instalação é simples, e o funcionamento é
-            totalmente autônomo com alimentação solar.
-          </p>
+
+      <section id="section-how-it-works">
+        <div class="columns-box">
+          <div>
+            <h2>Como Funciona</h2>
+            <p>
+              O MoCH é composto por um microcontrolador Arduino, um sensor
+              ultrassônico para medir a distância da superfície da água e um
+              módulo de chip 2G que envia os dados para nossa central de
+              monitoramento. A instalação é simples, e o funcionamento é
+              totalmente autônomo com alimentação solar.
+            </p>
+          </div>
+          <div>
+            <img
+              src="./assets/images/_vxnujyHFLRUoYucQKIQQsnVy0e8Vs0qMAxQd_6K23M.webp"
+              alt=""
+            />
+          </div>
         </div>
-        <div>
-          <img src="" alt="" />
+        <div class="columns-box">
+          <div>
+            <img src="" alt="" />
+            <h3><strong>Baixo Custo</strong></h3>
+            <p>
+              Equipamentos acessíveis e manutenção mínima, ideal para municípios
+              pequenos.
+            </p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3><strong>Dados em Tempo Real</strong></h3>
+            <p>
+              Atualizações frequentes permitem rápida resposta a enchentes ou
+              secas.
+            </p>
+          </div>
+          <div>
+            <img src="" alt="" />
+            <h3><strong>Escalável</strong></h3>
+            <p>
+              Fácil adaptação para outros corpos hídricos como açudes, barragens
+              e reservatórios urbanos.
+            </p>
+          </div>
         </div>
       </section>
-      <section class="columns-box">
-        <div>
-          <img src="" alt="" />
-          <p>
-            <strong>Baixo Custo:</strong> Equipamentos acessíveis e manutenção
-            mínima, ideal para municípios pequenos.
-          </p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>
-            <strong>Dados em Tempo Real:</strong> Atualizações frequentes
-            permitem rápida resposta a enchentes ou secas.
-          </p>
-        </div>
-        <div>
-          <img src="" alt="" />
-          <p>
-            <strong>Escalável:</strong> Fácil adaptação para outros corpos
-            hídricos como açudes, barragens e reservatórios urbanos.
-          </p>
-        </div>
-      </section>
-      <section>
+
+      <section id="section-faq">
         <h2>Perguntas frequentes</h2>
         <div>
           <div>
             <h3>Esse sistema precisa de internet Wi-Fi?</h3>
           </div>
-          <p>
-            Não. Utilizamos chip 2G, que funciona onde há sinal de celular
-            básico, sem precisar de Wi-Fi.
-          </p>
+          <div>
+            <hr />
+            <p>
+              Não. Utilizamos chip 2G, que funciona onde há sinal de celular
+              básico, sem precisar de Wi-Fi.
+            </p>
+          </div>
         </div>
         <div>
           <div>
             <h3>Qual a precisão da medição?</h3>
           </div>
-          <p>
-            O sensor possui margem de erro de apenas alguns milímetros, o que
-            garante um acompanhamento confiável do nível da água.
-          </p>
+          <div>
+            <hr />
+            <p>
+              O sensor possui margem de erro de apenas alguns milímetros, o que
+              garante um acompanhamento confiável do nível da água.
+            </p>
+          </div>
         </div>
         <div>
           <div>
             <h3>O equipamento funciona durante a noite ou em dias nublados?</h3>
           </div>
-          <p>
-            Sim. A alimentação é feita por painel solar com bateria
-            recarregável, garantindo autonomia mesmo sem luz solar direta.
-          </p>
+          <div>
+            <hr />
+            <p>
+              Sim. A alimentação é feita por painel solar com bateria
+              recarregável, garantindo autonomia mesmo sem luz solar direta.
+            </p>
+          </div>
         </div>
       </section>
-      <section>
+
+      <section id="section-quote">
         <h2>Orçamento</h2>
-        <form action="">
+        <form id="form-quote" action="">
           <input type="text" name="nome" id="nome" placeholder="Seu nome" />
           <input type="text" name="cidade" id="cidade" placeholder="Cidade" />
           <input
@@ -137,6 +154,7 @@
         </form>
       </section>
     </main>
+
     <footer class="columns-box">
       <section class="section-footer-column">
         <h4>Contato</h4>
