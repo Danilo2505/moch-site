@@ -22,3 +22,14 @@ function defineCurrentTheme(theme) {
 }
 
 defineCurrentTheme(themeSystem);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  // Mostra a resposta informando que está na lista de espera
+  let divWaitingListAnswer = document.querySelector("#div-waiting-list-answer");
+
+  divWaitingListAnswer.style.display = "flex";
+
+  return false;
+}

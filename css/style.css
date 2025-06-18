@@ -26,6 +26,7 @@ main,
 footer {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 main > *,
@@ -67,6 +68,22 @@ figcaption {
 .columns-box > div,
 .columns-box > section {
   width: 100%;
+}
+
+.columns-box > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.columns-box > div > h3,
+.columns-box > div > p {
+  width: 100%;
+  text-align: left;
+}
+
+.representation-icons {
+  max-width: 80vw;
 }
 
 #top-bar {
@@ -159,6 +176,20 @@ body.dark-mode #form-quote input[type="email"] {
   background-color: #265ef2; /* tonalidade mais escura do azul */
 }
 
+/* !!!!! */
+#div-waiting-list-answer {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 32px;
+  border-radius: 32px;
+  border: 2px solid red;
+}
+#div-waiting-list-answer > span {
+  font-size: 20px;
+  max-width: 500px;
+}
+
 /* Tablets and Desktop */
 @media only screen and (min-width: 481px) {
   #section-localization-map {
@@ -202,6 +233,10 @@ body.dark-mode #form-quote input[type="email"] {
   .columns-box {
     gap: 3em;
     padding: 0 2em;
+  }
+
+  .representation-icons {
+    max-width: 10em;
   }
 
   #section-quote h2 {
