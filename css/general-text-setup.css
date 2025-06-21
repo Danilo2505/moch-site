@@ -25,14 +25,18 @@ h4 {
 h2,
 h3,
 h4 {
+  width: 100%;
   margin: 0.5em 0;
   line-height: 1.5;
+  text-align: left;
 }
 
 /* Texto normal dos parágrafos */
 p {
   font-size: 18px;
   line-height: 1.6;
+  text-align: justify;
+  text-wrap: wrap;
 }
 
 /* Texto auxiliar ou menor (ex: figcaption, labels pequenos) */

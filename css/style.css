@@ -40,6 +40,11 @@ footer section {
   gap: 0.5em;
 }
 
+footer {
+  align-items: start;
+  margin-bottom: 1em;
+}
+
 figcaption {
   word-break: break-word;
 }
@@ -79,11 +84,10 @@ figcaption {
 .columns-box > div > h3,
 .columns-box > div > p {
   width: 100%;
-  text-align: left;
 }
 
 .representation-icons {
-  max-width: 80vw;
+  max-width: 60vw;
 }
 
 #top-bar {
@@ -117,6 +121,10 @@ img {
 }
 
 #section-quote {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   background-color: var(--bg-color);
   color: var(--text-color);
   text-align: center;
@@ -129,7 +137,7 @@ img {
 }
 
 #form-quote {
-  max-width: 500px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -141,7 +149,7 @@ img {
   padding: 0.8em;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: white;
   color: var(--text-color);
   transition: border-color 0.2s ease;
@@ -167,7 +175,7 @@ body.dark-mode #form-quote input[type="email"] {
   padding: 0.9em;
   font-size: 16px;
   font-weight: bold;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -176,14 +184,14 @@ body.dark-mode #form-quote input[type="email"] {
   background-color: #265ef2; /* tonalidade mais escura do azul */
 }
 
-/* !!!!! */
 #div-waiting-list-answer {
+  width: 100%;
   display: none;
   align-items: center;
   justify-content: center;
-  padding: 32px;
-  border-radius: 32px;
-  border: 2px solid red;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  border: 2px solid var(--accent-color);
 }
 #div-waiting-list-answer > span {
   font-size: 20px;
@@ -192,6 +200,10 @@ body.dark-mode #form-quote input[type="email"] {
 
 /* Tablets and Desktop */
 @media only screen and (min-width: 481px) {
+  body > * {
+    max-width: 90vw;
+  }
+
   #section-localization-map {
     display: flex;
     flex-direction: row;
@@ -217,7 +229,17 @@ body.dark-mode #form-quote input[type="email"] {
     gap: 2em;
     padding: 0px 1em;
   }
+
+  .representation-icons {
+    max-width: 12em;
+  }
+
+  #section-quote,
+  #div-waiting-list-answer {
+    max-width: 60vw;
+  }
 }
+
 /* Wide & Ultra-Wide Monitors */
 @media only screen and (min-width: 1400px) {
   body {
@@ -225,30 +247,21 @@ body.dark-mode #form-quote input[type="email"] {
   }
 
   body > * {
-    max-width: 1200px;
+    max-width: 75vw;
     margin-left: auto;
     margin-right: auto;
   }
 
   .columns-box {
-    gap: 3em;
+    gap: 4em;
     padding: 0 2em;
-  }
-
-  .representation-icons {
-    max-width: 10em;
   }
 
   #section-quote h2 {
     font-size: 2.5em;
   }
 
-  #form-quote {
-    max-width: 600px;
-  }
-
   #section-faq {
-    max-width: 900px;
     margin-left: auto;
     margin-right: auto;
   }
