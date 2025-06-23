@@ -144,6 +144,10 @@ img {
   gap: 1em;
 }
 
+#form-quote > input {
+  color: black;
+}
+
 #form-quote input[type="text"],
 #form-quote input[type="email"] {
   padding: 0.8em;
@@ -151,15 +155,7 @@ img {
   border: 1px solid #ccc;
   border-radius: 0.5rem;
   background-color: white;
-  color: var(--text-color);
   transition: border-color 0.2s ease;
-}
-
-body.dark-mode #form-quote input[type="text"],
-body.dark-mode #form-quote input[type="email"] {
-  background-color: #1e1e1e;
-  border-color: #444;
-  color: #e0e0e0;
 }
 
 #form-quote input[type="text"]:focus,

@@ -26,10 +26,18 @@ defineCurrentTheme(themeSystem);
 function submitForm(e) {
   e.preventDefault();
 
-  // Mostra a resposta informando que está na lista de espera
-  let divWaitingListAnswer = document.querySelector("#div-waiting-list-answer");
+  let nome = document.querySelector("#nome");
+  let cidade = document.querySelector("#cidade");
+  let email = document.querySelector("#email");
 
-  divWaitingListAnswer.style.display = "flex";
+  if (nome.value && cidade.value && email.value) {
+    // Mostra a resposta informando que está na lista de espera
+    let divWaitingListAnswer = document.querySelector(
+      "#div-waiting-list-answer"
+    );
+
+    divWaitingListAnswer.style.display = "flex";
+  }
 
   return false;
 }
